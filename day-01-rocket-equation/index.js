@@ -1,5 +1,5 @@
-const day01a = require("./day-01-rocket-equation/FuelRequirements").getFuelRequirements;
-const day01b = require("./day-01-rocket-equation/FuelRequirements").getNewFuelRequirements;
+const day01a = require("./FuelRequirements").getFuelRequirements;
+const day01b = require("./FuelRequirements").getNewFuelRequirements;
 
 const input = [
    148623, 
@@ -106,5 +106,6 @@ const input = [
 
 let output = input.reduce((acc, currVal) => acc + day01a(currVal), 0);
 console.log(output);
+
 output = input.reduce((acc, currVal) => acc + day01b(currVal), 0);
 console.log(output);
