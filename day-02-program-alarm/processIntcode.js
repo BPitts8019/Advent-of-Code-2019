@@ -14,28 +14,28 @@
  * Once you're done processing an opcode, move to the next one by stepping 
  * forward 4 positions.
  * 
- * @param {string} intcode 
+ * @param {string} intcode
+ * @returns {Array}
  */
 const processIntcode = (intcode) => {
    const operation = {
-      "1": (a, b) => (Number(a) + Number(b)).toString(),
-      "2": (a, b) => (Number(a) * Number(b)).toString()
+      1: (a, b) => a + b,
+      2: (a, b) => a * b
    };
-   let rtnCode = intcode;
+   let rtnCode = intcode.split(",").map(code => Number(code));
    let pos;
-
-   rtnCode = rtnCode.split(",");
+   
    for (let idx = 0; idx < rtnCode.length; idx=idx+4) {
       const opCode = rtnCode[idx];
 
       switch (opCode) {
-         case "1":
-         case "2":
-            pos = rtnCode.slice(idx+1, idx+4).map(index => Number(index));
-            
+         case 1:
+         case 2:
+            pos = rtnCode.slice(idx+1, idx+4);
+
             rtnCode[pos[2]] = operation[opCode](rtnCode[pos[0]], rtnCode[pos[1]]);
             break;
-         case "99":
+         case 99:
             idx = rtnCode.length;
             break;
          default:
@@ -43,7 +43,7 @@ const processIntcode = (intcode) => {
       }
    }
 
-   return rtnCode.toString();
+   return rtnCode;
 };
 
 module.exports = {

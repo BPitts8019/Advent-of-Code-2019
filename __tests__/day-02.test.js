@@ -33,22 +33,30 @@ Here are the initial and final states of a few more small programs:
 */
 describe("Day02a: Program Alarm", () => {
    it(`processes 'ADD' opcode (1) correctly`, () => {
-      console.log("ADD");
-      expect(processIntcode("1,0,0,0,99")).toBe("2,0,0,0,99");
+      const output = processIntcode("1,0,0,0,99");
+
+      expect(output).toHaveLength(5);
+      expect(output).toEqual(expect.arrayContaining([2,0,0,0,99]));
    });
 
    it(`processes 'MULTIPLY' opcode (2) correctly`, () => {
-      console.log("MULTIPLY");
-      expect(processIntcode("2,3,0,3,99")).toBe("2,3,0,6,99");
+      const output = processIntcode("2,3,0,3,99");
+
+      expect(output).toHaveLength(5);
+      expect(output).toEqual(expect.arrayContaining([2,3,0,6,99]));
    });
 
    it(`processes 'END' opcode (99) correctly`, () => {
-      console.log("END");
-      expect(processIntcode("2,4,4,5,99,0")).toBe("2,4,4,5,99,9801");
+      const output = processIntcode("2,4,4,5,99,0");
+
+      expect(output).toHaveLength(6);
+      expect(output).toEqual(expect.arrayContaining([2,4,4,5,99,9801]));
    });
 
    it(`processes mulitple opcodes correctly`, () => {
-      console.log("normal use");
-      expect(processIntcode("1,1,1,4,99,5,6,0,99")).toBe("30,1,1,4,2,5,6,0,99");
+      const output = processIntcode("1,1,1,4,99,5,6,0,99");
+
+      expect(output).toHaveLength(9);
+      expect(output).toEqual(expect.arrayContaining([30,1,1,4,2,5,6,0,99]));
    });
 });
