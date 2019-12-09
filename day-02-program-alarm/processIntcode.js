@@ -46,6 +46,4 @@ const processIntcode = (intcode) => {
    return rtnCode;
 };
 
-module.exports = {
-   processIntcode
-};
+module.exports = processIntcode;

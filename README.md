@@ -23,7 +23,7 @@ Collect stars by solving puzzles. Two puzzles will be made available on each day
 | Day  | Part One | Part Two | 
 |---|:---:|:---:|
 |[:heavy_check_mark: Day 01: Rocket Equation](https://github.com/BPitts8019/Advent-of-Code-2019/tree/master/day-01-rocket-equation)  | :star: | :star: |
-|[Day 02: Program Alarm](https://github.com/BPitts8019/Advent-of-Code-2019/tree/master/day-02-program-alarm)  | :star: | :clock5: In Progress |
+|[Day 02: Program Alarm](https://github.com/BPitts8019/Advent-of-Code-2019/tree/master/day-02-program-alarm)  | :star: | :star: |
 |[Day 03: TBD](https://github.com/BPitts8019/)  | :hourglass_flowing_sand: TBD | :hourglass_flowing_sand: TBD |
 |[Day 04: TBD](https://github.com/BPitts8019/)  | :hourglass_flowing_sand: TBD | :hourglass_flowing_sand: TBD |
 
