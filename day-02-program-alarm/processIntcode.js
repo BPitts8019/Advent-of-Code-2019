@@ -46,6 +46,11 @@ const processIntcode = (intcode) => {
    return rtnCode;
 };
 
+const processMemory = (intcode) => {
+
+}
+
 module.exports = {
-   processIntcode
+   processIntcode,
+   processMemory
 };
