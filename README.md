@@ -24,7 +24,7 @@ Collect stars by solving puzzles. Two puzzles will be made available on each day
 |---|:---:|:---:|
 |[:heavy_check_mark: Day 01: Rocket Equation](https://github.com/BPitts8019/Advent-of-Code-2019/tree/master/day-01-rocket-equation)  | :star: | :star: |
 |[:heavy_check_mark: Day 02: Program Alarm](https://github.com/BPitts8019/Advent-of-Code-2019/tree/master/day-02-program-alarm)  | :star: | :star: |
-|[Day 03: Crossed Wires](https://github.com/BPitts8019/Advent-of-Code-2019/tree/master/day-02-program-alarm)  | :clock5: In Progress | :smirk: Not Started |
+|[Day 03: Crossed Wires](https://github.com/BPitts8019/)  | :clock5: In Progress | :smirk: Not Started |
 |[Day 04: TBD](https://github.com/BPitts8019/)  | :hourglass_flowing_sand: TBD | :hourglass_flowing_sand: TBD |
 |[Day 05: TBD](https://github.com/BPitts8019/)  | :hourglass_flowing_sand: TBD | :hourglass_flowing_sand: TBD |
 |[Day 06: TBD](https://github.com/BPitts8019/)  | :hourglass_flowing_sand: TBD | :hourglass_flowing_sand: TBD |
